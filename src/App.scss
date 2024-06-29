@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "~bootstrap/scss/bootstrap";
+@import "./styles/variables";
+@import "./styles/mixins";
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+// common componenets
+@import "./assets/TopHeader.scss";
+@import "./assets/SearchBar.scss";
+@import "./assets/Header.scss";
+@import "./assets/Footer.scss";
+@import "./assets/CommonBanner.scss";
+@import "./assets/ConnectWithUs.scss";
+@import "./assets/Faq.scss";
+@import "./assets/CommonDetail.scss";
+@import "./assets/CommonSections.scss";
+@import "./assets/FloatingIcon.scss";
+
+// home
+@import "./assets/Home/HomeBanner.scss";
+@import "./assets/Home/OurStudio.scss";
+@import "./assets/Home/OurServices.scss";
+@import "./assets/Home/NewTechServices.scss";
+@import "./assets/Home/OurPillars.scss";
+@import "./assets/Home/BlogHome.scss";
+
+// about
+@import "./assets/About/AboutWelcome.scss";
+@import "./assets/About/MissionVision.scss";
+@import "./assets/About/OurTeam.scss";
+
+// portfolio
+@import "./assets/Portfolio/Portfolio.scss";
+@import "./assets/Portfolio/PortfolioInner.scss";
+
+// services
+@import "./assets/Services/Services.scss";
+@import "./assets/Services/ServicesInner.scss";
+
+// new tech services
+@import "./assets/NewTechServices/NewTechServices.scss";
+@import "./assets/NewTechServices/NewTechServicesInner.scss";
+
+// more services
+@import "./assets/More/More.scss";
+@import "./assets/More/MoreInner.scss";
+
+// contact
+@import "./assets/Contact.scss";
+
+// careers
+@import "./assets/Careers.scss";
+
+// blog
+@import "./assets/Blog/Blog.scss";
+@import "./assets/Blog/BlogInner.scss";
+
+// media
+@import "./assets/Media/Media.scss";
+@import "./assets/Media/MediaInner.scss";
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-display: swap;
+  font-family: "Roboto", sans-serif;
+  // margin: 0;
+  // height: 100vh;
+  // width: 100vw;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+// resize observer error sol.
+
+iframe#webpack-dev-server-client-overlay {
+  display: none !important;
+}

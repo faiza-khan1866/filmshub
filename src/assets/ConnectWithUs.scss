@@ -1,0 +1,46 @@
+.connect_us_sec {
+  background: url("../images/bgimages/connectbg1.png"),
+    url("../images/bgimages/connectbg2.png"), rgb(0, 0, 0);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  .tag_line,
+  .main_title {
+    color: $white;
+  }
+  .line_style {
+    width: 30%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  p {
+    color: $lightwhite;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .form-control {
+    background: transparent;
+    color: $white !important;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid $secondarycolor;
+    &::placeholder {
+      color: $lightwhite;
+    }
+    &:focus {
+      background: transparent;
+      border-bottom: 1px solid $white;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+// new tech service details css
+.new_tech_service_inner_detail_sec {
+  background: url("../../images/bgimages/newtechservicedetailbg.png"),
+    rgb(0, 0, 0);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  .tag_line,
+  .main_title {
+    color: $white;
+  }
+  .line_style {
+    width: 25%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  p {
+    color: $lightwhite;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  figure {
+    height: 400px;
+    overflow: hidden;
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// new tech service highlights css
+
+.new_tech_service_highlights_sec {
+  background: url("../../images/bgimages/highlightsbg1.png"),
+    url("../../images/bgimages/highlightsbg2.png");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  .header_wrape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$sm} {
+      display: block;
+    }
+    .arrows_wrape {
+      @media #{$sm} {
+        text-align: end;
+        margin-bottom: 2rem;
+      }
+      .slider_custom_arrows {
+        color: $black;
+        border: 1px solid $black;
+        border-radius: 50px;
+        padding: 0.46rem 0.5rem;
+        margin: 0;
+        background: transparent;
+        &:hover {
+          color: $white;
+          background: $secondarycolor;
+          border: 1px solid $secondarycolor;
+        }
+        &:disabled {
+          color: $lightblack;
+          border: 1px solid $lightblack;
+        }
+      }
+    }
+  }
+
+  figure {
+    height: 400px;
+    overflow: hidden;
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

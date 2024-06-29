@@ -1,0 +1,50 @@
+.our_pillars_sec {
+  background: url("../../images/bgimages/ourpillarsbg.png"), rgb(0, 0, 0);
+  background-position: top right;
+  background-repeat: no-repeat;
+  .tag_line,
+  .main_title {
+    color: $white;
+  }
+  .line_style {
+    width: 25%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  p {
+    color: $lightwhite;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .nav-pills {
+    .nav-link {
+      color: $lightwhite;
+      border-radius: 0;
+      border-bottom: 1px solid $secondarycolor;
+      padding: 1rem 0;
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 500;
+      @media #{$sm} {
+        font-size: 16px;
+      }
+      &.active,
+      &:hover {
+        background: transparent;
+        color: $white;
+      }
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

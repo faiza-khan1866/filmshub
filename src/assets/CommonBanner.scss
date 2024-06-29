@@ -1,0 +1,51 @@
+.common_banner_area {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  .common_banner_content {
+    padding: 10rem 0 1rem 0;
+    @media #{$sm} {
+      padding: 6rem 0 1rem 0;
+    }
+    @media #{$md} {
+      padding: 8rem 0 1rem 0;
+    }
+    .main_title {
+      color: $white;
+      font-size: 80px;
+      @media #{$sm} {
+        font-size: 50px;
+      }
+      @media #{$md} {
+        font-size: 60px;
+      }
+    }
+    .line_style {
+      width: 25%;
+      @media #{$sm} {
+        width: 30%;
+        margin-left: -2rem;
+      }
+    }
+    ul {
+      li {
+        margin: 0 5px;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: $secondarycolor;
+          }
+        }
+      }
+    }
+  }
+}

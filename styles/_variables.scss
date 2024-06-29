@@ -1,0 +1,22 @@
+// Colors ---------------
+$white: #ffffff;
+$lightwhite: rgba(255, 255, 255, 0.6);
+$black: #000000;
+$lightblack: rgba(0, 0, 0, 0.5);
+$primarycolor: #103178;
+$secondarycolor: #eb6165;
+$bgcolor: #f1f0eb;
+
+// Responsive Variables
+$xxl: "(min-width: 1600px)";
+$xl: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-device-width: 991px)";
+$sm: "only screen and (max-device-width: 767px)";
+$lsm: "only screen and (min-width: 576px) and (max-width: 766px)";
+$xsm: "(max-width: 575px)";
+$tiny: "(max-width: 399px)";
+
+//spacing
+$v-sp-lg: 2rem;
+$v-sp-sm: 1rem;

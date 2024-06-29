@@ -1,0 +1,87 @@
+.searchbar-icon {
+  position: relative;
+  .search-content {
+    position: absolute;
+    z-index: 1;
+    top: 160%;
+    right: 0;
+    min-width: 600px;
+    padding: 15px;
+    transition: all 0.5s ease 0s;
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+    border-radius: 3px;
+    form {
+      position: relative;
+      text-align: left;
+      p {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+        small {
+          color: #a09f9f;
+        }
+        a {
+          color: $black !important;
+          text-decoration: none;
+          margin: 0 !important;
+          &:hover {
+            color: $secondarycolor !important;
+          }
+        }
+      }
+      h3 {
+        font-size: 18px;
+        color: $secondarycolor;
+        margin-bottom: 1rem;
+      }
+      .button-search {
+        font-size: 18px;
+        line-height: 1.4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: fit-content;
+        padding: 5px 20px 2px;
+        transition: all 0.4s ease 0s;
+        text-transform: uppercase;
+        color: $secondarycolor;
+        border: none;
+        border-color: transparent;
+        background: transparent;
+        svg {
+          color: $secondarycolor;
+          font-size: 18px;
+        }
+        &:hover {
+          color: $black;
+        }
+      }
+      input {
+        width: 100%;
+        padding: 5px 72px 5px 15px;
+        transition: all 0.4s ease 0s;
+        color: $black;
+        border: 1px solid #d3d3d3;
+        outline: medium none;
+        background: transparent;
+        &:focus {
+          border: 1px solid $secondarycolor;
+        }
+      }
+    }
+    .serach_suggestions {
+      overflow-y: scroll;
+      max-height: 300px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

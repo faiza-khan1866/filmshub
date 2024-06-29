@@ -1,0 +1,52 @@
+.common_detail_sec {
+  background: url("../images/bgimages/aboutbg.png"),
+    url("../images/bgimages/morebg2.png"),
+    url("../images/bgimages/contactbg2.png");
+  background-position: top left, right center, bottom left;
+  background-repeat: no-repeat;
+  .line_style {
+    width: 20%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $black;
+  }
+  p {
+    color: $lightblack;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 1rem 0;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    a {
+      color: $secondarycolor;
+      text-decoration: none;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  ul {
+    margin: 1rem 0;
+    text-align: justify;
+    &:last-child {
+      margin: 0;
+    }
+    li {
+      color: $lightblack;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: justify;
+      @media #{$sm} {
+        font-size: 16px;
+      }
+    }
+  }
+}

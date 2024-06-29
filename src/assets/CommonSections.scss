@@ -1,0 +1,223 @@
+/********* common CSS *************/
+.tag_line {
+  font-family: "Roboto", serif;
+  color: $black;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  @media #{$sm} {
+    font-size: 16px;
+  }
+}
+.main_title {
+  text-transform: capitalize;
+  color: $black;
+  font-size: 60px;
+  font-weight: 500;
+  @media #{$sm} {
+    font-size: 40px;
+  }
+  @media #{$md} {
+    font-size: 50px;
+  }
+  span {
+    color: $secondarycolor;
+    font-family: "Playfair Display", serif;
+  }
+}
+.line_style {
+  border: 1px solid $secondarycolor;
+  opacity: 1;
+  width: 50%;
+  margin-left: -5rem;
+  @media #{$sm} {
+    width: 50%;
+  }
+}
+
+.theme_black_btn {
+  color: $black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: transparent;
+  position: relative;
+  &::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 5%;
+    height: 100%;
+    background: $secondarycolor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &.btn-text {
+    color: $black;
+    // check out mdn docs for different types of blend modes.
+    mix-blend-mode: difference;
+    z-index: 1;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.theme_white_btn {
+  color: $white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: transparent;
+  position: relative;
+  &::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 5%;
+    height: 100%;
+    background: $secondarycolor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &.btn-text {
+    color: $white;
+    // check out mdn docs for different types of blend modes.
+    mix-blend-mode: difference;
+    z-index: 1;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.not_found_note {
+  color: $lightblack;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+/********* scroll bar CSS *************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondarycolor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(235, 97, 101, 0.8);
+}
+
+/********* toastify CSS *************/
+
+.Toastify__close-button {
+  display: none !important;
+}
+.Toastify__toast-body {
+  font-size: 15px;
+}
+
+/********* Pagination CSS *************/
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 30px 0 0 0;
+  li {
+    &.disabled {
+      a {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+    }
+    a {
+      margin: 0 5px;
+      background: rgba(119, 119, 119, 0.2);
+      color: $black;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+    }
+    &:hover,
+    &.active {
+      a {
+        background: $secondarycolor;
+        color: $white !important;
+      }
+    }
+  }
+}
+
+/* ******error page css******* */
+
+.error-wrapper {
+  background: url("../images/bgimages/portfoliodetailbg.png"),
+    url("../images/bgimages/morebg2.png");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .txt-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px #eee;
+    background-color: $white;
+    padding: 2rem 1rem;
+    z-index: 99;
+    text-align: center;
+    .status-code {
+      text-transform: capitalize;
+      color: $black;
+      font-size: 100px;
+      font-weight: 500;
+    }
+    .subtext {
+      font-family: "Roboto", serif;
+      color: $black;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .description {
+      font-family: "Roboto", serif;
+      color: $lightblack;
+      font-size: 18px;
+      font-weight: 400;
+      width: 75%;
+    }
+  }
+}

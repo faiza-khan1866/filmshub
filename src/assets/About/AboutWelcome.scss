@@ -1,0 +1,77 @@
+.about_welcome_sec {
+  background: url("../../images/bgimages/aboutbg.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  .line_style {
+    width: 35%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  p {
+    color: $lightblack;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .about_choose_sec {
+    text-align: center;
+    h3 {
+      font-family: "Roboto", serif;
+      font-size: 60px;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: transparent;
+      -webkit-text-stroke: 1px $secondarycolor;
+      text-stroke: 1px $secondarycolor;
+    }
+    h5 {
+      color: $black;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+  }
+  .img_wrape {
+    .image_container {
+      position: relative;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      figure {
+        height: 580px;
+        overflow: hidden;
+        .image {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .play_icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// services info css
+.services_info_sec {
+  background: url("../../images/bgimages/servicesinfobg.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  .line_style {
+    width: 60%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  p {
+    color: $lightblack;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+// services list css
+.services_list_sec {
+  background: url("../../images/bgimages/aboutbg.png"),
+    url("../../images/bgimages/serviceslistbg1.png"),
+    url("../../images/bgimages/serviceslistbg2.png");
+  background-position: top left, left center, bottom right;
+  background-repeat: no-repeat;
+  .mobile_service_siv {
+    @media #{$sm} {
+      order: initial !important;
+    }
+  }
+  figure {
+    height: 250px;
+    overflow: hidden;
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover {
+      .image {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .services_list_item {
+    background: $black;
+    padding: 0 2rem;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .tag_line {
+      color: $secondarycolor;
+      font-size: 14px;
+    }
+    h3 {
+      color: $white;
+      text-transform: capitalize;
+      font-size: 28px;
+      font-weight: 500;
+      @media #{$sm, $md} {
+        font-size: 24px;
+      }
+    }
+  }
+}

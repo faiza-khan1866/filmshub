@@ -1,0 +1,64 @@
+.contact_form_sec {
+  background: url("../images/bgimages/contactbg1.png"),
+    url("../images/bgimages/contactbg2.png");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  .line_style {
+    width: 30%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  p {
+    color: $lightblack;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  ul {
+    margin: 1rem 0 0 0;
+    li {
+      color: $black;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 0.7rem;
+      .icon_style {
+        margin-right: 0.4rem;
+      }
+      &:last-child {
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+          color: $secondarycolor;
+        }
+      }
+    }
+  }
+  .form-control {
+    background: transparent;
+    color: $black !important;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid $secondarycolor;
+    &::placeholder {
+      color: $lightblack;
+    }
+    &:focus {
+      background: transparent;
+      border-bottom: 1px solid $black;
+      box-shadow: none;
+    }
+  }
+}

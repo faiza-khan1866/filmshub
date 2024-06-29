@@ -1,0 +1,26 @@
+.our_studio_sec {
+  background: url("../../images/bgimages/studiobg.png");
+  background-position: 62% center;
+  background-repeat: no-repeat;
+  p {
+    color: $lightblack;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: justify;
+    @media #{$sm} {
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  figure {
+    overflow: hidden;
+    height: 550px;
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

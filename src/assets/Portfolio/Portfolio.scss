@@ -1,0 +1,81 @@
+// Porfolio List css
+
+.portfolio_list_sec {
+  background: url("../../images/bgimages/portfoliobg1.png"),
+    url("../../images/bgimages/portfoliobg2.png"),
+    url("../../images/bgimages/portfoliobg3.png");
+  background-position: top right, left center, bottom right;
+  background-repeat: no-repeat;
+  .line_style {
+    width: 25%;
+    @media #{$sm} {
+      width: 50%;
+    }
+  }
+  .portfolio_item {
+    figure {
+      height: 300px;
+      overflow: hidden;
+      cursor: pointer;
+      .image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        .image {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .portfolio_item_detail {
+      ul {
+        margin-bottom: 0.5rem;
+        li {
+          color: $black;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase;
+          &:first-child {
+            color: $secondarycolor;
+          }
+        }
+      }
+      h3 {
+        color: $black;
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+//portfolio side bar css
+
+.portfolio_sidebar_sec {
+  ul {
+    li {
+      color: $lightblack;
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-bottom: 0.7rem;
+      padding: 0 0.5rem;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background: $bgcolor;
+        padding: 0.5rem;
+      }
+      &.active {
+        color: $black;
+        border-left: 4px solid $secondarycolor;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
